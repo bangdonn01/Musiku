@@ -1,356 +1,199 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kisah Kita ❤️</title><style>
+<title>Untuk Kamu ❤️</title>
+
+<style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#fff8f5;
-color:#333;
-overflow-x:hidden;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:80px;
-padding:0 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(255,255,255,.85);
-backdrop-filter:blur(15px);
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-z-index:999;
-}
-
-.logo{
-font-size:34px;
-font-weight:700;
-background:linear-gradient(90deg,#ff4f9a,#a855f7,#60a5fa);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-nav a{
-text-decoration:none;
-margin-left:25px;
-font-size:34px;
-font-weight:900;
-color:#fff;
-letter-spacing:3px;
-text-transform:uppercase;
-padding:10px 20px;
-border-radius:30px;
-background:linear-gradient(135deg,#ff4f9a,#a855f7,#60a5fa);
-box-shadow:0 8px 20px rgba(0,0,0,.25);
-text-shadow:2px 2px 5px rgba(0,0,0,.4),0 0 15px rgba(255,255,255,.9);
-}
-
-.hero{
+background:linear-gradient(135deg,#ff9ec4,#ffd6e7);
 height:100vh;
 display:flex;
+justify-content:center;
 align-items:center;
-justify-content:space-between;
-padding:100px 80px 0;
-background:linear-gradient(135deg,#ff4f9a,#a855f7,#60a5fa);
-color:white;
-}
-
-.hero-text{
-max-width:650px;
-}
-
-.hero-text h1{
-font-size:90px;
-line-height:1;
-margin-bottom:20px;
-}
-
-.hero-text p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.btn{
-padding:15px 35px;
-border:none;
-border-radius:40px;
-font-size:17px;
-font-weight:bold;
-cursor:pointer;
-margin-right:10px;
-}
-
-.btn1{
-background:white;
-color:#ff4f9a;
-}
-
-.btn2{
-background:rgba(255,255,255,.2);
-color:white;
-border:2px solid white;
-}
-
-.hero img{
-width:420px;
-height:600px;
-object-fit:cover;
-border-radius:30px;
-box-shadow:0 20px 60px rgba(0,0,0,.25);
-}
-
-.section{
-padding:70px;
-}
-
-.section-title{
-font-size:38px;
-margin-bottom:25px;
-}
-
-.search{
-width:100%;
-padding:16px;
-border:none;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-margin-bottom:25px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
+overflow:hidden;
 }
 
 .card{
-background:white;
-border-radius:25px;
-overflow:hidden;
-cursor:pointer;
-transition:.4s;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.03);
-}
-
-.card img{
-width:100%;
-height:380px;
-object-fit:cover;
-}
-
-.card-info{
-padding:15px;
-}
-
-.card-info h3{
-margin-bottom:10px;
-}
-
-.tag{
-display:inline-block;
-padding:6px 12px;
-border-radius:20px;
-background:linear-gradient(90deg,#ff4f9a,#a855f7);
-color:white;
-font-size:12px;
-}
-
-.pink{
-background:#fff8fb;
-}
-
-.purple{
-background:#f7f0ff;
-}
-
-.peach{
-background:#fff4eb;
-}
-
-.love-box{
-background:white;
-padding:40px;
-border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.love-box h2{
-margin-bottom:15px;
-color:#ff4f9a;
-}
-
-.love-box p{
-font-size:18px;
-line-height:1.7;
-}
-
-footer{
+background:#fff;
 padding:30px;
-text-align:center;
-background:white;
-}
-
-.lightbox{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.95);
-justify-content:center;
-align-items:center;
-z-index:9999;
-}
-
-.lightbox img{
-max-width:90%;
-max-height:90%;
 border-radius:20px;
-}
-
-@media(max-width:1200px){
-.gallery{
-grid-template-columns:repeat(3,1fr);
-}
-}
-
-@media(max-width:900px){
-.hero{
-flex-direction:column;
+width:90%;
+max-width:420px;
 text-align:center;
-height:auto;
-padding-bottom:50px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+animation:muncul .8s;
 }
 
-.hero-text h1{
-font-size:55px;
+h1{
+color:#ff2d75;
+margin-bottom:20px;
 }
 
-.gallery{
-grid-template-columns:repeat(2,1fr);
+p{
+font-size:18px;
+line-height:1.6;
+color:#444;
+margin-bottom:25px;
+}
+
+button{
+padding:12px 28px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+margin:10px;
+transition:.3s;
+}
+
+#yes{
+background:#ff2d75;
+color:#fff;
+}
+
+#yes:hover{
+transform:scale(1.08);
+}
+
+#no{
+background:#ddd;
+}
+
+@keyframes muncul{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
 }
 }
 
-@media(max-width:600px){
-.gallery{
-grid-template-columns:1fr;
+.hearts{
+position:absolute;
+font-size:25px;
+animation:naik 5s linear forwards;
 }
 
-header{
-padding:0 20px;
+@keyframes naik{
+0%{
+transform:translateY(100vh);
+opacity:1;
 }
+100%{
+transform:translateY(-120vh);
+opacity:0;
 }
-</style></head><body><header>
-<div class="logo">❤️ Wanita Lucu </div><nav>
-<a href="#">VIANA CANTIK</a>
-
-</nav>
-</header><section class="hero"><div class="hero-text">
-<h1>PILIH FOTO FAVORIT  MU❤️</h1><p>
-Tempat untuk menyimpan semua Foto cantik dia ,
-dan momen terindah yang pernah kita lalui bersama wkkwkw
-</p><button class="btn btn1"
-onclick="document.getElementById('tayang').scrollIntoView({behavior:'smooth'})">
-Lihat Foto
-</button>
-
-</button>
-</div><img src="https://raw.githubusercontent.com/bangdonn01/Koosdesain/refs/heads/main/file_00000000201071f89ac568d1633c76ed.png" alt="Banner"></section><section class="section pink" id="tayang"><h2 class="section-title">📷 Sedang Dilihat</h2><input type="text" class="search" placeholder="Cari Favorit mu..."><div class="gallery"><div class="card" onclick="show(this)">
-<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/IMG_20260625_204609.png">
-<div class="card-info">
-<h3>Viana lagi lucu ❤️</h3>
-<span class="tag">Pilih</span>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/IMG_20260625_204707.png">
-<div class="card-info">
-<h3>Viana lagi ketawa</h3>
-<span class="tag">Pilih</span>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto3.jpg">
-<div class="card-info">
-<h3>Kencan Pertama 💕</h3>
-<span class="tag">Pilih</span>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto4.jpg">
-<div class="card-info">
-<h3>Hari Bahagia ✨</h3>
-<span class="tag">Favorit</span>
-</div>
-</div></div></section><section class="section purple"><h2 class="section-title">💖 Pilihan Ku</h2><div class="gallery"><div class="card" onclick="show(this)">
-<img src="foto5.jpg">
-<div class="card-info">
-<h3>Momen Favorit 1</h3>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto6.jpg">
-<div class="card-info">
-<h3>Momen Favorit 2</h3>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto7.jpg">
-<div class="card-info">
-<h3>Momen Favorit 3</h3>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto8.jpg">
-<div class="card-info">
-<h3>Momen Favorit 4</h3>
-</div>
-</div></div></section><section class="section peach"><h2 class="section-title">🌹 Kenangan Terbaik</h2><div class="gallery"><div class="card" onclick="show(this)">
-<img src="foto9.jpg">
-<div class="card-info">
-<h3>Kenangan 1</h3>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto10.jpg">
-<div class="card-info">
-<h3>Kenangan 2</h3>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto11.jpg">
-<div class="card-info">
-<h3>Kenangan 3</h3>
-</div>
-</div><div class="card" onclick="show(this)">
-<img src="foto12.jpg">
-<div class="card-info">
-<h3>Kenangan 4</h3>
-</div>
-</div></div></section><section class="section"><div class="love-box">
-<h2>💌 Surat Cinta</h2><p>
-Terima kasih telah menjadi bagian dari setiap cerita,
-tawa, dan kenangan indah yang tersimpan di halaman ini.
-Semoga semua momen yang kita lalui selalu menjadi kisah
-yang ingin kita kenang selamanya. ❤️
-</p></div></section><div class="lightbox" id="lightbox">
-<img id="preview">
-</div><footer>
-💕 Dibuat Dengan Cinta Untuk Seseorang Yang Spesial 💕
-</footer><script>
-function show(card){
-let img=card.querySelector("img");
-document.getElementById("preview").src=img.src;
-document.getElementById("lightbox").style.display="flex";
 }
 
-document.getElementById("lightbox").onclick=function(){
-this.style.display="none";
+.fade{
+animation:fade 1s;
 }
-</script></body>
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="konten" class="card">
+
+<h1>Hai Viana Cantik ❤️</h1>
+
+<p>
+Aku punya satu pertanyaan penting...<br><br>
+ di malam ini yg mungkin agak aneh gk seperti orang orang aku mau  Menjadi bagian hidup kmu , kita bngun komitmen menjalani hubungan untuk serius Maukah kamu menjadi seseorang yang spesial di hatiku?
+</p>
+
+<button id="yes">💖 Mau</button>
+<button id="no">🙈 Tidak</button>
+
+</div>
+
+<audio id="musik" loop>
+<source src="https://raw.githubusercontent.com/bangdonn01/Musiku/main/lagu.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const yes=document.getElementById("yes");
+const no=document.getElementById("no");
+const musik=document.getElementById("musik");
+const konten=document.getElementById("konten");
+
+// Tombol tidak kabur
+no.addEventListener("mouseover",()=>{
+no.style.position="absolute";
+no.style.left=Math.random()*80+"%";
+no.style.top=Math.random()*80+"%";
+});
+
+// Tombol mau
+yes.addEventListener("click",()=>{
+
+musik.play();
+
+konten.classList.add("fade");
+
+setTimeout(()=>{
+
+konten.innerHTML=`
+
+<h1>💖Remsii yahh hehe💖</h1>
+
+<p style="font-size:22px;">
+Mulai hari ini...<br><br>
+
+<b>01 Juli 2026</b><br><br>
+
+Terima kasih sudah menerima aku ❤️<br><br>
+
+Semoga kita selalu saling menjaga, 
+saling mendukung, saling support, menjaga komitmen kita dan semoga kita selalu bersma menjalani kehidupan pnuh tawa
+dan kebahagiaan selamanya 🤍
+mari membangun cerita baru 
+i love you Viana 
+</p>
+
+<h2>❤️ I Love You ❤️</h2>
+
+`;
+
+},700);
+
+});
+
+// Hati berjatuhan
+setInterval(()=>{
+
+let hati=document.createElement("div");
+hati.className="hearts";
+hati.innerHTML="❤️";
+hati.style.left=Math.random()*100+"vw";
+hati.style.fontSize=(20+Math.random()*25)+"px";
+
+document.body.appendChild(hati);
+
+setTimeout(()=>{
+hati.remove();
+},5000);
+
+},300);
+
+</script>
+
+</body>
 </html>
